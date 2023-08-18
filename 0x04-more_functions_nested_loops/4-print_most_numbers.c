@@ -2,18 +2,17 @@
 
 /**
  * print_most_numbers - print num except 2 and 4
- *
- * return: void
+ * Return: void
  */
 
 void print_most_numbers(void)
 {
-	char c;
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = 0 ; i < 10 ; i++)
 	{
-		if (!(c == '2' || c == '4'))
-			_putchar(c);
+		if (i != 2 && i != 4)
+			_putchar(i + '0');
 	}
 	_putchar('\n');
 }
